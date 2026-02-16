@@ -1,4 +1,4 @@
-# Monokai Pro (Spectrum) Editor Color Scheme for QGIS
+# Monokai Pro (Filter Spectrum) Editor Color Scheme for QGIS
 
 <center><img src="https://i.imgur.com/TsdEPrI.png"></center>
 

@@ -43,10 +43,11 @@ class MonokaiProSpectrumScheme(QgsCodeEditorColorScheme):
         QgsCodeEditorColorScheme.ColorRole.FoldIconHalo: QColor('#212121'),
         QgsCodeEditorColorScheme.ColorRole.IndentationGuide: QColor('#939293'),
         QgsCodeEditorColorScheme.ColorRole.ErrorBackground: QColor('#f7f1ff'),
+        QgsCodeEditorColorScheme.ColorRole.SearchMatchBackground: QColor('#69676c'),
     }
 
     def __init__(self):
-        super().__init__('Monokai Pro (Spectrum)', 'Monokai Pro (Spectrum)')
+        super().__init__(id='Monokai Pro (Spectrum)', name='Monokai Pro (Filter Spectrum)')
 
         for role, color in self.COLORS.items():
             self.setColor(role, color)
@@ -60,4 +61,4 @@ class MonokaiProSpectrumSchemePlugin:
         pass
 
     def unload(self):
-        QgsGui.codeEditorColorSchemeRegistry().removeColorScheme('Monokai Pro (Spectrum)')
+        QgsGui.codeEditorColorSchemeRegistry().removeColorScheme(id='Monokai Pro (Spectrum)')
